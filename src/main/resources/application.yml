@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        kafkaProducer-out-0:
+          destination: es.sample.project.topic
+          group: kfk
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+
+server:
+  port: 8585
